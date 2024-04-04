@@ -11,7 +11,7 @@ class List
 
   def note_request
     puts "Hello User. Please enter your name."
-    self.name = gets.chomp.captitalize 
+    self.name = gets.chomp.capitalize
     puts "\n"
   end
 
