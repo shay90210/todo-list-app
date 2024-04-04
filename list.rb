@@ -42,14 +42,18 @@ class List
   end
 
   def add_note
+    pp "We're adding a note!"
   end
 
   def access_list
+    pp "We're accessing a list!"
   end
 
   def modify_note
+    pp "We're modifying a note!"
   end
 
   def delete_note
+    pp "We're deleting a note!"
   end
 end
