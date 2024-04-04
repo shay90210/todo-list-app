@@ -13,6 +13,8 @@ class List
     puts "Hello User. Please enter your name."
     self.name = gets.chomp.capitalize
     puts "\n"
+
+    puts "Hello #{self.name}! What would you like to do today?"
   end
 
   def add_note
