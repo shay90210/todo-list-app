@@ -7,5 +7,12 @@ class List
     @note = note
   end
 
-  
+  def add_note
+  end
+
+  def access_note
+  end
+
+  def delete_note
+  end
 end
