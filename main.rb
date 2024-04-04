@@ -13,6 +13,9 @@ class List
   def access_note
   end
 
+  def modify_note
+  end
+
   def delete_note
   end
 end
