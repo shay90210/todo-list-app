@@ -9,6 +9,9 @@ class List
     @date = date
   end
 
+  def note_request
+  end
+
   def add_note
   end
 
