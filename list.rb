@@ -21,6 +21,7 @@ class List
       puts "2. Access your list"
       puts "3. Modify a note"
       puts "4. Delete a note"
+      puts "5. Quit"
 
       choice = gets.chomp.to_i
       case choice
