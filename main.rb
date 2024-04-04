@@ -10,6 +10,9 @@ class List
   end
 
   def note_request
+    puts "Hello User. Please enter your name."
+    self.name = gets.chomp.captitalize 
+    puts "\n"
   end
 
   def add_note
