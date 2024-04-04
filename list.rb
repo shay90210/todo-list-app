@@ -25,10 +25,18 @@ class List
       choice = gets.chomp.to_i
       case choice
       when 1
+        add_note
       when 2
+        access_list
       when 3
+        modify_note
       when 4
+        delete_note
+      when 5
+        puts "Let us know if you need to make a note next time! Goodbye!"
+        break
       else
+        "Did you mean to make a choice? Please choose a number between 1-4."
       end
     end
   end
