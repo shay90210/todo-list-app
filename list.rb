@@ -14,7 +14,7 @@ class List
     self.name = gets.chomp.capitalize
     puts "\n"
 
-    loop do
+    while True
       puts "Hello #{self.name}! What would you like to do today?"
       puts "\n"
       puts "1. Add a note"
