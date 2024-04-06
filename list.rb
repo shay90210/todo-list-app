@@ -47,7 +47,7 @@ class List
   end
 
   def add_note
-    new_note = []
+    new_list = []
 
     puts "What would you like to add?"
     user_note = gets.chomp
