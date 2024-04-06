@@ -44,9 +44,13 @@ class List
 
   def add_note
     new_note = []
-    
-    puts "What would you like to add?"
 
+    puts "What would you like to add?"
+    user_note = gets.chomp
+    
+    if new_note.push(user_note)
+      puts "You successfully added a note!"
+    end
   end
 
   def access_list
