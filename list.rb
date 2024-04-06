@@ -47,10 +47,9 @@ class List
 
     puts "What would you like to add?"
     user_note = gets.chomp
+    puts "You want to add #{user_note} to #{self.name}'s list?"
+
     
-    if new_note.push(user_note)
-      puts "You successfully added a note!"
-    end
   end
 
   def access_list
