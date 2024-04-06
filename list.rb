@@ -43,7 +43,10 @@ class List
   end
 
   def add_note
-    pp "We're adding a note!"
+    new_note = []
+    
+    puts "What would you like to add?"
+
   end
 
   def access_list
