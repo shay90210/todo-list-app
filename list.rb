@@ -27,12 +27,16 @@ class List
       case choice
       when 1
         add_note
+        break
       when 2
         access_list
+        break
       when 3
         modify_note
+        break
       when 4
         delete_note
+        break
       when 5
         puts "Let us know if you need to make a note next time! Goodbye!"
         break
