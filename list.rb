@@ -51,9 +51,17 @@ class List
 
     puts "What would you like to add?"
     user_note = gets.chomp
-    puts "You want to add #{user_note} to #{self.name}'s list?"
+    puts "Do you want to add #{user_note} to #{self.name}'s list?"
+    puts "Enter 1 = Yes"
+    puts "Enter 2 = No"
 
-    
+    choice = gets.chomp.to_i
+    case choice
+    when 1
+      puts "Note Added!"
+    when 2
+      "What would you like to add instead?"
+    end
   end
 
   def access_list
