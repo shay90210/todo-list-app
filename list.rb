@@ -50,7 +50,9 @@ class List
     new_list = []
 
     puts "What would you like to add?"
+    puts "\n"
     user_note = gets.chomp
+    puts "\n"
     puts "Do you want to add #{user_note} to #{self.name}'s list?"
     puts "Enter 1 = Yes"
     puts "Enter 2 = No"
