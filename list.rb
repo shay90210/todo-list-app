@@ -67,15 +67,15 @@ class List
     end
   end
 
-  def access_list
-    pp "We're accessing a list!"
-  end
-
   def modify_note
     pp "We're modifying a note!"
   end
 
   def delete_note
     pp "We're deleting a note!"
+  end
+
+  def show_list
+    pp "We're going to show your current list!"
   end
 end
