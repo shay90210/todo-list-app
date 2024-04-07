@@ -23,8 +23,8 @@ class List
       puts "4. Delete a note"
       puts "5. Quit"
 
-      choice = gets.chomp.to_i
-      case choice
+      option = gets.chomp.to_i
+      case option
       when 1
         add_note
         break
