@@ -53,7 +53,7 @@ class List
 
     loop do
       puts "\n"
-      puts "What would you like to add?"
+      puts "What would you like to add to your list?"
       user_note = gets.chomp
       puts "\n"
       puts "Do you want to add #{user_note} to #{self.name}'s list?"
@@ -65,10 +65,10 @@ class List
       when 1
         puts "Note Added!"
       when 2
-        puts "What would you like to add instead?"
+        puts "What would you like to add instead to your list?"
       else 
         puts "\n"
-        puts "Invalid option. What do you want to add to your note?"
+        puts "Invalid option. What do you want to add to your list?"
       end
     end
   end
