@@ -38,7 +38,7 @@ class List
         show_list
         break
       when 5
-        puts "Let us know if you need to make a note next time! Goodbye!"
+        puts "We'll create a list next time! Goodbye!"
         break
       else
         "Did you mean to make a choice? Please choose a number between 1-4."
