@@ -63,7 +63,7 @@ class List
     when 1
       puts "Note Added!"
     when 2
-      "What would you like to add instead?"
+      puts "What would you like to add instead?"
     end
   end
 
