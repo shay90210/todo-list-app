@@ -66,6 +66,8 @@ class List
         puts "Note Added!"
       when 2
         puts "What would you like to add instead?"
+      else 
+        puts "Invalid option. Please choose 1 = Yes or 2 = No..."
       end
     end
   end
