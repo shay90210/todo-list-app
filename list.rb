@@ -18,9 +18,9 @@ class List
       puts "Hello #{self.name}! What would you like to do today?"
       puts "\n"
       puts "1. Add a note"
-      puts "2. Access your list"
-      puts "3. Modify a note"
-      puts "4. Delete a note"
+      puts "2. Modify a note"
+      puts "3. Delete a note"
+      puts "4. Show list"
       puts "5. Quit"
 
       option = gets.chomp.to_i
@@ -29,13 +29,13 @@ class List
         add_note
         break
       when 2
-        access_list
-        break
-      when 3
         modify_note
         break
-      when 4
+      when 3
         delete_note
+        break
+      when 4
+        show_list
         break
       when 5
         puts "Let us know if you need to make a note next time! Goodbye!"
