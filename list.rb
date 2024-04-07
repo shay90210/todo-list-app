@@ -42,6 +42,7 @@ class List
         break
       else
         "Did you mean to make a choice? Please choose a number between 1-4."
+        puts "\n"
       end
     end
   end
