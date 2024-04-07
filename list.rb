@@ -51,20 +51,22 @@ class List
   def add_note
     new_list = []
 
-    puts "\n"
-    puts "What would you like to add?"
-    user_note = gets.chomp
-    puts "\n"
-    puts "Do you want to add #{user_note} to #{self.name}'s list?"
-    puts "Enter 1 = Yes"
-    puts "Enter 2 = No"
+    loop do
+      puts "\n"
+      puts "What would you like to add?"
+      user_note = gets.chomp
+      puts "\n"
+      puts "Do you want to add #{user_note} to #{self.name}'s list?"
+      puts "Enter 1 = Yes"
+      puts "Enter 2 = No"
 
-    choice = gets.chomp.to_i
-    case choice
-    when 1
-      puts "Note Added!"
-    when 2
-      puts "What would you like to add instead?"
+      choice = gets.chomp.to_i
+      case choice
+      when 1
+        puts "Note Added!"
+      when 2
+        puts "What would you like to add instead?"
+      end
     end
   end
 
