@@ -51,6 +51,7 @@ class List
   def add_note
     new_list = []
 
+    puts "\n"
     puts "What would you like to add?"
     puts "\n"
     user_note = gets.chomp
