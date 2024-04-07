@@ -65,7 +65,7 @@ class List
       when 1
         puts "Note Added!"
       when 2
-        puts "What would you like to add instead to your list?"
+        puts "Let's update your request."
       else 
         puts "\n"
         puts "Invalid option."
