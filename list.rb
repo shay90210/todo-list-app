@@ -67,6 +67,7 @@ class List
       when 2
         puts "What would you like to add instead?"
       else 
+        puts "\n"
         puts "Invalid option. Please choose 1 = Yes or 2 = No..."
       end
     end
