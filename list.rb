@@ -41,7 +41,7 @@ class List
         puts "We'll create a list next time! Goodbye!"
         break
       else
-        "Did you mean to make a choice? Please choose a number between 1-4."
+        puts "Did you mean to make a choice? Please choose a number between 1-4."
         puts "\n"
       end
     end
