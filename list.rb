@@ -68,7 +68,7 @@ class List
         puts "What would you like to add instead?"
       else 
         puts "\n"
-        puts "Invalid option. Please choose 1 = Yes or 2 = No..."
+        puts "Invalid option. What do you want to add to your note?"
       end
     end
   end
