@@ -70,6 +70,10 @@ class List
         puts "\n"
         puts "Invalid option."
       end
+
+      if choice == 1
+        new_list.push(user_note)
+      end
     end
   end
 
