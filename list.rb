@@ -64,6 +64,7 @@ class List
       case choice
       when 1
         puts "Note Added!"
+        return
       when 2
         puts "Let's update your request."
       else 
