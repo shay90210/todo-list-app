@@ -50,7 +50,7 @@ class List
   end
 
   def add_note
-    new_list = []
+    user_list = []
 
     loop do
       puts "\n"
@@ -64,7 +64,7 @@ class List
       choice = gets.chomp.to_i
       case choice
       when 1
-        new_list.push(user_note)
+      user_list.push(user_note)
         puts "Note Added!"
         puts "\n"
         return list_menu
@@ -78,7 +78,11 @@ class List
   end
 
   def modify_note
-    pp "We're modifying a note!"
+    puts "Which note would you like to modify?"
+
+    user_list.each do |note|
+      print note
+    end
   end
 
   def delete_note
