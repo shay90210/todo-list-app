@@ -63,17 +63,15 @@ class List
       choice = gets.chomp.to_i
       case choice
       when 1
+        new_list.push(user_note)
         puts "Note Added!"
-        return
+        puts "\n"
+        return list_menu
       when 2
         puts "Let's update your request."
       else 
         puts "\n"
         puts "Invalid option."
-      end
-
-      if choice == 1
-        return new_list.push(user_note)
       end
     end
   end
