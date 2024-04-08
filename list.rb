@@ -9,11 +9,14 @@ class List
     @date = date
   end
 
-  def list_menu
+  def user_name
     puts "Hello User. Please enter your name."
     self.name = gets.chomp.capitalize
     puts "\n"
+    return list_menu
+  end
 
+  def list_menu
     loop do
       puts "Hello #{self.name}! What would you like to do today?"
       puts "\n"
