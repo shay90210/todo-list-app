@@ -9,7 +9,7 @@ class List
     @date = date
   end
 
-  def note_request
+  def list_manager
     puts "Hello User. Please enter your name."
     self.name = gets.chomp.capitalize
     puts "\n"
