@@ -50,6 +50,9 @@ class List
 
   def add_note
     new_list = []
+    if choice == 1
+      return new_list.push(user_note)
+    end
 
     loop do
       puts "\n"
@@ -69,10 +72,6 @@ class List
       else 
         puts "\n"
         puts "Invalid option."
-      end
-
-      if choice == 1
-        return new_list.push(user_note)
       end
     end
   end
