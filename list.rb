@@ -62,7 +62,7 @@ class List
       choice = gets.chomp.to_i
       case choice
       when 1
-      user_list.push(user_note)
+        @notes.push(user_note)
         puts "Note Added!"
         puts "\n"
         return list_menu
@@ -78,7 +78,7 @@ class List
   def modify_note
     puts "Which note would you like to modify?"
 
-    user_list.each do |note|
+    @notes.each do |note|
       print note
     end
   end
