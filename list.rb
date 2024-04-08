@@ -50,8 +50,6 @@ class List
   end
 
   def add_note
-    user_list = []
-
     loop do
       puts "\n"
       puts "What would you like to add to your list?"
