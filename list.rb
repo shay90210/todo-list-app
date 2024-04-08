@@ -72,7 +72,7 @@ class List
       end
 
       if choice == 1
-        new_list.push(user_note)
+        return new_list.push(user_note)
       end
     end
   end
