@@ -1,12 +1,10 @@
 class List
   attr_accessor :name
   attr_accessor :note
-  attr_accessor :date
 
   def initialize
     @name = name
     @note = note
-    @date = date
   end
 
   def user_name
