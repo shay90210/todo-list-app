@@ -79,7 +79,12 @@ class List
     puts "Which note would you like to modify?"
 
     @notes.each do |note|
-      print note
+      number_of_note = 1
+      while @note = true
+        print number_of_note.to_s + note
+
+        number_of_note = number_of_note + 1
+      end
     end
   end
 
