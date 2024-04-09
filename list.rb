@@ -80,6 +80,7 @@ class List
 
     @notes.each do |note|
       puts note
+      puts "\n"
     end
   end
 
@@ -92,8 +93,8 @@ class List
 
     @notes.each do |note|
       puts note
+      puts "\n"
     end
-    puts "\n"
     return list_menu
   end
 end
