@@ -88,6 +88,12 @@ class List
   end
 
   def show_list
-    pp "We're going to show your current list!"
+    puts "Here is your list!"
+
+    @notes.each do |note|
+      puts note
+    end
+    puts "\n"
+    return list_menu
   end
 end
