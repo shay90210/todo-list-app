@@ -89,12 +89,12 @@ class List
   end
 
   def show_list
+    puts "\n"
     puts "Here is your list!"
-
-    @notes.each do |note|
-      puts note
+  
+    @notes.each_with_index do |note, index|
+      puts "#{index + 1}. #{note}"
       puts "\n"
     end
-    return list_menu
   end
 end
