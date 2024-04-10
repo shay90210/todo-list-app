@@ -77,10 +77,14 @@ class List
 
   def modify_note
     puts "Which note would you like to modify?"
+
+    choice = gets.chomp.to_i
   end
 
   def delete_note
     puts "Here is your list. Which note would you like to delete?"
+
+
   end
 
   def show_list
