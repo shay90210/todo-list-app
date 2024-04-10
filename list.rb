@@ -96,5 +96,6 @@ class List
       puts "#{index + 1}. #{note}"
       puts "\n"
     end
+    return list_menu
   end
 end
