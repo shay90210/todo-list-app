@@ -77,11 +77,6 @@ class List
 
   def modify_note
     puts "Which note would you like to modify?"
-
-    @notes.each do |note|
-      puts note
-      puts "\n"
-    end
   end
 
   def delete_note
