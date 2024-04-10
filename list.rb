@@ -80,7 +80,7 @@ class List
   end
 
   def delete_note
-    pp "We're deleting a note!"
+    puts "Here is your list. Which note would you like to delete?"
   end
 
   def show_list
