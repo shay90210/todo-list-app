@@ -86,6 +86,7 @@ class List
   end
 
   def delete_note
+    puts "\n"
     puts "Here is your list. Which note would you like to delete?"
 
     @notes.each_with_index do |note, index|
@@ -94,12 +95,13 @@ class List
     end
 
     choice = gets.chomp.to_i
-    if choice == @notes.each_with_index do
-      @notes.delete(note)
+    @notes.each_with_index do |note, index|
+      if choice == @notes.each_with_index
+        @notes.delete(note)
+      end
     end
     puts "Note has been successfully deleted!"
-    end
-
+    return list_menu
   end
 
   def show_list
