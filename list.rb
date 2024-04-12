@@ -88,7 +88,6 @@ class List
   def delete_note
     puts "Here is your list. Which note would you like to delete?"
 
-    puts "Which note would you like to modify?"
     @notes.each_with_index do |note, index|
       puts "#{index + 1}. #{note}"
       puts "\n"
