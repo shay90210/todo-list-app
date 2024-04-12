@@ -92,12 +92,13 @@ class List
     @notes.each_with_index do |note, index|
       puts "#{index + 1}. #{note}"
       puts "\n"
+    end
 
-      choice = gets.chomp.to_i
-      if choice == @notes.each_with_index
-        @notes.delete(note)
-      end
-      puts "Note has been successfully deleted!"
+    choice = gets.chomp.to_i
+    if choice == @notes.each_with_index do
+      @notes.delete(note)
+    end
+    puts "Note has been successfully deleted!"
     end
 
   end
