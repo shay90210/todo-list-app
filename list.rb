@@ -94,7 +94,10 @@ class List
       puts "\n"
 
       choice = gets.chomp.to_i
-      if 
+      if choice == @notes.each_with_index
+        @notes.delete(note)
+      end
+      puts "Note has been successfully deleted!"
     end
 
   end
