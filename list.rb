@@ -97,7 +97,7 @@ class List
 
     choice = gets.chomp.to_i
     if choice == @notes.each_with_index
-      @notes.delete(note)
+      @notes.delete(user_note)
     end
 
     puts "Note has been successfully deleted!"
