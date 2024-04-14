@@ -96,11 +96,12 @@ class List
     end
 
     choice = gets.chomp.to_i
-    if choice == @notes(user_note)
-      @notes.delete(user_note)
+    if choice.between?(1, @notes.length)
+      @notes.delete_at(choice - 1)
+      puts "Note has been successfully deleted!"
+    else
+      puts "Invalid choice. Please select a valid note number."
     end
-
-    puts "Note has been successfully deleted!"
     return list_menu
   end
 
