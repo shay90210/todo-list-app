@@ -96,11 +96,10 @@ class List
     end
 
     choice = gets.chomp.to_i
-    @notes.each_with_index do |note, index|
-      if choice == @notes.each_with_index
-        @notes.delete(note)
-      end
+    if choice == @notes.each_with_index
+      @notes.delete(note)
     end
+
     puts "Note has been successfully deleted!"
     return list_menu
   end
