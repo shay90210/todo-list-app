@@ -96,7 +96,7 @@ class List
     end
 
     choice = gets.chomp.to_i
-    if choice == @notes.each_with_index
+    if choice == @notes(user_note)
       @notes.delete(user_note)
     end
 
