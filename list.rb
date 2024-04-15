@@ -98,7 +98,7 @@ class List
     end
 
     delete_choice = gets.chomp.to_i
-    if choice.between?(1, @notes.length)
+    if delete_choice.between?(1, @notes.length)
       @notes.delete_at(delete_choice - 1)
       puts "#{delete_choice} has been successfully deleted!"
     else
