@@ -76,10 +76,10 @@ class List
   end
 
   def modify_note
+    puts "\n"
     puts "Which note would you like to modify?"
     @notes.each_with_index do |note, index|
       puts "#{index + 1}. #{note}"
-      puts "\n"
     end
     user_choice = gets.chomp.to_i
 
@@ -114,7 +114,6 @@ class List
   
     @notes.each_with_index do |note, index|
       puts "#{index + 1}. #{note}"
-      puts "\n"
     end
     return list_menu
   end
