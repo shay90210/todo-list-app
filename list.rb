@@ -84,6 +84,8 @@ class List
     end
 
     choice = gets.chomp.to_i
+    if choice 
+    end
   end
 
   def delete_note
