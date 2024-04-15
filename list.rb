@@ -24,8 +24,8 @@ class List
       puts "4. Show list"
       puts "5. Quit"
 
-      option = gets.chomp.to_i
-      case option
+      menu_option = gets.chomp.to_i
+      case menu_option
       when 1
         add_note
         break
@@ -59,11 +59,11 @@ class List
       puts "Enter 1 = Yes"
       puts "Enter 2 = No"
 
-      choice = gets.chomp.to_i
-      case choice
+      add_choice = gets.chomp.to_i
+      case add_choice
       when 1
         @notes.push(user_note)
-        puts "Note Added!"
+        puts "'#{user_note}' has been added to #{self.name} list!"
         puts "\n"
         return list_menu
       when 2
@@ -95,13 +95,12 @@ class List
 
     @notes.each_with_index do |note, index|
       puts "#{index + 1}. #{note}"
-      puts "\n"
     end
 
-    choice = gets.chomp.to_i
+    delete_choice = gets.chomp.to_i
     if choice.between?(1, @notes.length)
-      @notes.delete_at(choice - 1)
-      puts "Note has been successfully deleted!"
+      @notes.delete_at(delete_choice - 1)
+      puts "#{delete_choice} has been successfully deleted!"
     else
       puts "Invalid choice. Please select a valid note number."
     end
