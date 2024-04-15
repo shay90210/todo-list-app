@@ -63,7 +63,7 @@ class List
       case add_choice
       when 1
         @notes.push(user_note)
-        puts "'#{user_note}' has been added to #{self.name} list!"
+        puts "'#{user_note}' has been added to #{self.name}'s list!"
         puts "\n"
         return list_menu
       when 2
