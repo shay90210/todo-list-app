@@ -84,7 +84,9 @@ class List
     end
 
     choice = gets.chomp.to_i
-    if choice 
+    if choice.between?(1, @notes.length)
+      @notes.
+      puts "What would you like to enter instead?"
     end
   end
 
