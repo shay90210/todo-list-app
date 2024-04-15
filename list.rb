@@ -16,8 +16,8 @@ class List
 
   def list_menu
     loop do
-      puts "Hello #{self.name}! What would you like to do today?"
       puts "\n"
+      puts "Hello #{self.name}! What would you like to do today?"
       puts "1. Add a note"
       puts "2. Modify a note"
       puts "3. Delete a note"
