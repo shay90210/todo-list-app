@@ -92,6 +92,7 @@ class List
     else
       puts "Invalid choice. Please select a number between 1 and #{notes.length}".
     end
+    return list_menu
   end
 
   def delete_note
