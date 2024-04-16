@@ -78,7 +78,7 @@ class List
   def modify_note
     puts "\n"
     puts "Which note would you like to modify?"
-    
+
     @notes.each_with_index do |note, index|
       puts "#{index + 1}. #{note}"
     end
@@ -86,6 +86,7 @@ class List
 
     puts "What would you like to enter instead?"
     modify_choice = gets.chomp.to_i
+    
     if user_choice.between?(1, @notes.length)
       @notes.delete_at(user_choice - 1)
       @notes.push(modify_choice)
