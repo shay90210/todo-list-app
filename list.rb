@@ -82,7 +82,7 @@ class List
     @notes.each_with_index do |note, index|
       puts "#{index + 1}. #{note}"
     end
-    user_choice = gets.chomp.to_i
+    note_to_replace = gets.chomp.to_i
 
     puts "What would you like to enter instead?"
     modify_choice = gets.chomp
