@@ -86,15 +86,6 @@ class List
 
     puts "What would you like to enter instead?"
     modify_choice = gets.chomp
-    
-    if user_choice.between?(1, @notes.length)
-      @notes.delete_at(user_choice - 1)
-      @notes.push(modify_choice)
-      puts "#{user_choice} has been replaced with #{modify_choice}."
-    else
-      puts "Invalid choice. Please select a number between 1 and #{notes.length}".
-    end
-    return list_menu
   end
 
   def delete_note
