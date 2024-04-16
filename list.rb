@@ -85,7 +85,7 @@ class List
     user_choice = gets.chomp.to_i
 
     puts "What would you like to enter instead?"
-    modify_choice = gets.chomp.to_i
+    modify_choice = gets.chomp
     
     if user_choice.between?(1, @notes.length)
       @notes.delete_at(user_choice - 1)
