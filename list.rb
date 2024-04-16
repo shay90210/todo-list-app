@@ -78,6 +78,7 @@ class List
   def modify_note
     puts "\n"
     puts "Which note would you like to modify?"
+    
     @notes.each_with_index do |note, index|
       puts "#{index + 1}. #{note}"
     end
