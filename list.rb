@@ -82,10 +82,15 @@ class List
     @notes.each_with_index do |note, index|
       puts "#{index + 1}. #{note}"
     end
-    note_to_replace = gets.chomp.to_i
+    note_to_replace = gets.chomp.to_i - 1
 
-    puts "What would you like to enter instead?"
-    modify_choice = gets.chomp
+    if note_to_replace.nil?
+      puts "Note is not found on list."
+    else
+      puts "\n"
+      puts "What would you like to enter instead?"
+      new_note = gets.chomp
+    end
   end
 
   def delete_note
