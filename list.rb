@@ -84,12 +84,12 @@ class List
     end
     note_to_replace = gets.chomp.to_i
 
-    if note_to_replace.nil?
-      puts "Note is not found on list."
-    else
-      puts "\n"
+    if note_to_replace.between?(1, @notes.length)
       puts "What would you like to enter instead?"
       new_note = gets.chomp
+    else
+      puts "\n"
+      puts "Note is not found on list."
     end
   end
 
