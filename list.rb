@@ -77,11 +77,11 @@ class List
 
   def modify_note
     puts "\n"
-    
     puts "Which note would you like to modify?"
     @notes.each_with_index do |note, index|
       puts "#{index + 1}. #{note}"
     end
+    
     note_to_replace = gets.chomp.to_i
 
     if note_to_replace.between?(1, @notes.length)
