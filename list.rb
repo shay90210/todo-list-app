@@ -90,7 +90,7 @@ class List
       new_note = gets.chomp
       @notes.delete_at(note_to_replace - 1)
       @notes.push(new_note)
-      puts "#{note_to_replace} was replaced with #{new_note}."
+      puts "#{note_to_replace} was replaced with #{new_note}!"
     else
       puts "\n"
       puts "Note is not found on list."
