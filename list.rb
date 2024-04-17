@@ -85,6 +85,7 @@ class List
     note_to_replace = gets.chomp.to_i
 
     if note_to_replace.between?(1, @notes.length)
+      puts "\n"
       puts "What would you like to enter instead?"
       new_note = gets.chomp
     else
