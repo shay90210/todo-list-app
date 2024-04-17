@@ -93,7 +93,7 @@ class List
       puts "#{note_to_replace} was replaced with #{new_note}!"
     else
       puts "\n"
-      puts "Note is not found on list."
+      puts "Note is not found on the list."
     end
     return list_menu
   end
