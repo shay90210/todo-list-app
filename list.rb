@@ -91,6 +91,7 @@ class List
       puts "\n"
       puts "Note is not found on list."
     end
+    return list_menu
   end
 
   def delete_note
