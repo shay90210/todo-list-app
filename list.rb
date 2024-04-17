@@ -82,7 +82,7 @@ class List
     @notes.each_with_index do |note, index|
       puts "#{index + 1}. #{note}"
     end
-    note_to_replace = gets.chomp.to_i - 1
+    note_to_replace = gets.chomp.to_i
 
     if note_to_replace.nil?
       puts "Note is not found on list."
