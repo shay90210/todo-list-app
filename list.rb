@@ -91,11 +91,12 @@ class List
       @notes.delete_at(note_to_replace - 1)
       @notes.push(new_note)
       puts "#{note_to_replace} was replaced with #{new_note}!"
+      return list_menu
     else
       puts "\n"
       puts "Note is not found on the list."
+      return modify_note
     end
-    return list_menu
   end
 
   def delete_note
