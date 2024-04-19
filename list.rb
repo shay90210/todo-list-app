@@ -1,6 +1,5 @@
 class List
-  attr_accessor :name
-  attr_accessor :notes
+  attr_accessor :name, :notes
 
   def initialize
     @name = name
