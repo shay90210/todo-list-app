@@ -26,3 +26,6 @@ class AddNoteProcessor
     end
   end
 end
+
+class RemoveNoteProcessor
+end
