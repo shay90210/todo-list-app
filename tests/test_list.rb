@@ -3,6 +3,11 @@
 require 'minitest/autorun'
 require './list.rb'
 
+class MyInputProcessor
+  def get_user_input
+  end
+end
+
 class TestList < Minitest::Test 
   def test_add_note
     @list = List.new
