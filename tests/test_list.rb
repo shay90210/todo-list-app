@@ -33,5 +33,8 @@ class RemoveNoteProcessor
     print "Here is your list. Which note would you like to delete?"
     gets.chomp.to_i
   end
+
+  def remove_input
+  end
 end
 =end
