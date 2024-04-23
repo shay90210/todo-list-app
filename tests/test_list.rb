@@ -27,6 +27,7 @@ class AddNoteProcessor
   end
 end
 
+```
 class RemoveNoteProcessor
   def get_user_input
     print "Here is your list. Which note would you like to delete?"
