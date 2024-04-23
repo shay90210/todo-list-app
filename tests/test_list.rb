@@ -28,4 +28,8 @@ class AddNoteProcessor
 end
 
 class RemoveNoteProcessor
+  def get_user_input
+    print "Here is your list. Which note would you like to delete?"
+    gets.chomp.to_i
+  end
 end
