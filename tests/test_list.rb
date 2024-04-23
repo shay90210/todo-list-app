@@ -6,6 +6,7 @@ require './list.rb'
 class MyInputProcessor
   def get_user_input
     print "What would you like to add to your list?"
+    gets.chomp
   end
 end
 
