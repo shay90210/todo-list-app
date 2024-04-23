@@ -8,6 +8,13 @@ class MyInputProcessor
     print "What would you like to add to your list?"
     gets.chomp
   end
+
+  def store_input
+    input_array = []
+    input = get_user_input()
+    input_array << input
+    return input_array
+  end
 end
 
 class TestList < Minitest::Test 
