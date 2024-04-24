@@ -39,4 +39,7 @@ class RemoveNoteModification
     return @notes
   end
 end
+
+class RemoveNoteModificationTest < Minitest::Test
+end
 #=end
