@@ -34,12 +34,17 @@ class RemoveNoteModification
     gets.chomp.to_i
   end
 
-  def remove_value(notes, index)
-    @notes.delete_at(index - 1)
+  def remove_value(notes, note_to_remove)
+    notes.delete(note_to_remove)
     return @notes
   end
 end
 
 class RemoveNoteModificationTest < Minitest::Test
+  modifier = RemoveNoteModification.new
+  notes = ["cook dinner", "wash clothes", "record tv show"]
+  note_to_remove = "cook dinner"
+
+  modified_notes = modifier.remove_value(notes.dup, note_to_remove)
 end
 #=end
