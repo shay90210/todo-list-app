@@ -34,7 +34,7 @@ class RemoveNoteModification
     gets.chomp.to_i
   end
 
-  def remove_value(@notes, index)
+  def remove_value(notes, index)
     @notes.delete_at(index - 1)
     return @notes
   end
