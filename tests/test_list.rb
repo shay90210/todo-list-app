@@ -28,13 +28,15 @@ class AddNoteProcessor
 end
 
 #=begin
-class RemoveNoteProcessor
+class RemoveNoteModification
   def get_user_input
     print "Here is your list. Which note would you like to delete?"
     gets.chomp.to_i
   end
 
-  def remove_input
+  def remove_value(@notes, index)
+    @notes.delete_at(index - 1)
+    return @notes
   end
 end
 #=end
