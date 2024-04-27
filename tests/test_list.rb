@@ -27,7 +27,7 @@ class AddNoteProcessor
   end
 end
 
-#=begin
+=begin
 class RemoveNoteModification
   def get_user_input
     print "Here is your list. Which note would you like to delete?"
@@ -47,4 +47,4 @@ class RemoveNoteModificationTest < Minitest::Test
 
   modified_notes = modifier.remove_value(notes.dup, note_to_remove)
 end
-#=end
+=end
