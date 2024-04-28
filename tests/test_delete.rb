@@ -3,6 +3,9 @@
 require 'minitest/autorun'
 require './list.rb'
 
-class TestDelete < Minitest::Test
+class DeleteNoteProcessor
+end
 
+class TestDelete < Minitest::Test
+  # some code
 end
