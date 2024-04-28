@@ -8,8 +8,8 @@ class DeleteNoteProcessor
     puts "Here is your list. Which note would you like to delete?"
     gets.chomp.to_i
   end
-end
 
-class TestDelete < Minitest::Test
-  # some code
+  class TestDelete < Minitest::Test
+    # some code
+  end
 end
