@@ -4,6 +4,8 @@ require 'minitest/autorun'
 require './list.rb'
 
 class DeleteNoteProcessor
+  def get_user_input
+  end
 end
 
 class TestDelete < Minitest::Test
