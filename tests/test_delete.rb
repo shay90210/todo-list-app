@@ -17,6 +17,7 @@ class DeleteNoteProcessor
   end
 
   class TestDelete < Minitest::Test
-    # some code
+    def test_delete_note
+    end
   end
 end
