@@ -16,6 +16,7 @@ class DeleteNoteProcessor
   class TestDelete < Minitest::Test
     def setup
       processor = DeleteNoteProcessor.new
+      @processor.instance_variable_set(:@notes, ["cook dinner", "wash clothes"])
     end
   end
 end
