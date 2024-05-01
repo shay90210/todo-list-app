@@ -10,7 +10,10 @@ class DeleteNoteProcessor
   end
 
   def delete_input
-
+    @notes = ["cook dinner", "wash clothes"]
+    user_delete = user_choice()
+    @notes.delete_at(index)
+    return @notes
   end
 
   class TestDelete < Minitest::Test
