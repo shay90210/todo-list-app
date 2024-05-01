@@ -18,6 +18,7 @@ class DeleteNoteProcessor
 
   class TestDelete < Minitest::Test
     def test_delete_note
+      processor = DeleteNoteProcessor.new
     end
   end
 end
