@@ -9,11 +9,8 @@ class DeleteNoteProcessor
     gets.chomp.to_i
   end
 
-  def delete_input
-    @notes = ["cook dinner", "wash clothes"]
-    user_delete = user_choice()
+  def delete_note(index)
     @notes.delete_at(index)
-    return @notes
   end
 
   class TestDelete < Minitest::Test
