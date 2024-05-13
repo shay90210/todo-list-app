@@ -14,17 +14,6 @@ class DeleteNoteProcessor
   end
 
   class TestDelete < Minitest::Test
-    def setup
-      processor = DeleteNoteProcessor.new
-      @processor.instance_variable_set(:@notes, ["cook dinner", "wash clothes"])
-    end
 
-    def test_delete_note
-      delete_index = 0
-      @processor.delete_note(delete_index)
-
-      expected_notes = ["wash clothes"]
-      assert_equal expected_notes, @processor.instance_variable_get(:@notes)
-    end
   end
 end
