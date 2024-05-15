@@ -2,11 +2,11 @@ require "minitest/autorun"
 require "./list.rb"
 
 class TestShowNote < Minitest::Test
-  def test_show_note
+  def test_show_list
     list = List.new
     note = "This is a sample note."
 
-    formatted_note = list.show_note(note)
+    formatted_note = list.show_list(note)
 
     assert_equal("#{index + 1}. #{note}", formatted_note)
   end
