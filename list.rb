@@ -112,6 +112,7 @@ class List
       puts "'#{delete_choice}' has been deleted from #{self.name}'s list!"
     else
       puts "Invalid choice. Please select a valid note number."
+      delete_note
     end
     return list_menu
   end
