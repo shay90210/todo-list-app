@@ -8,6 +8,6 @@ class TestShowNote < Minitest::Test
 
     formatted_note = list.show_note(note)
 
-    assert_equal("#{index + 1}. #{note}")
+    assert_equal("#{index + 1}. #{note}", formatted_note)
   end
 end
