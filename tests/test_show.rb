@@ -6,7 +6,7 @@ class TestShowList < Minitest::Test
     list = List.new
     note = "This is a sample note."
 
-    formatted_note = list.show_list(note)
+    formatted_note = list.show_list
 
     assert_equal("#{index + 1}. #{note}", formatted_note)
   end
