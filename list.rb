@@ -111,6 +111,7 @@ class List
       @notes.delete_at(delete_choice - 1)
       puts "'#{delete_choice}' has been deleted from #{self.name}'s list!"
     else
+      puts "\n"
       puts "Invalid choice. Please select a valid note number."
       delete_note
     end
