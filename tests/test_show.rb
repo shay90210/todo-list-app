@@ -1,7 +1,7 @@
 require "minitest/autorun"
 require "./list.rb"
 
-class TestShowNote < Minitest::Test
+class TestShowList < Minitest::Test
   def test_show_list
     list = List.new
     note = "This is a sample note."
