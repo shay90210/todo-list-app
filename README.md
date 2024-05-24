@@ -1,4 +1,4 @@
-# ruby-cli-template
+# To Do List CLI
 
 Use this repository as a template for your Ruby CLI (command line interface) project.
 
