@@ -52,7 +52,7 @@ class List
     loop do
       puts "\n"
       puts "What would you like to add to your list?"
-      user_note = gets.chomp
+      user_note = gets.chomp.gsub(/\b\w/) {|word| word.capitalize }
       puts "\n"
       puts "Do you want to add #{user_note} to #{self.name}'s list?"
       puts "Enter 1 = Yes"
