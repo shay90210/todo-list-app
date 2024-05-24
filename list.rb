@@ -109,7 +109,7 @@ class List
     delete_choice = gets.chomp.to_i
     if delete_choice.between?(1, @notes.length)
       @notes.delete_at(delete_choice - 1)
-      puts "'#{delete_choice}' has been deleted from #{self.name}'s list!"
+      puts "'Note ##{delete_choice}' has been deleted from #{self.name}'s list!"
     else
       puts "\n"
       puts "Invalid choice. Please select a valid note number."
