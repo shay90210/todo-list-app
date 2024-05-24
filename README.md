@@ -7,6 +7,7 @@ CLI app will provide user with five options in creating list:
 - Add Note
 - Modify Note
 - Delete Note
+- Show List
 
 ## Usage
 Run `ruby app.rb` in terminal
