@@ -10,5 +10,7 @@ CLI app will ask the user for their name to be able to create a title using "[us
 - Show List
 - Quit
 
+User chooses option that best suits their needs in creating their list.
+
 ## Usage
 Run `ruby app.rb` in terminal
