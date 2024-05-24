@@ -89,7 +89,7 @@ class List
       new_note = gets.chomp
       @notes.delete_at(note_to_replace - 1)
       @notes.push(new_note)
-      puts "#{note_to_replace} was replaced with #{new_note}!"
+      puts "Note ##{note_to_replace} was replaced with #{new_note}!"
       return list_menu
     else
       puts "\n"
@@ -109,7 +109,7 @@ class List
     delete_choice = gets.chomp.to_i
     if delete_choice.between?(1, @notes.length)
       @notes.delete_at(delete_choice - 1)
-      puts "'Note ##{delete_choice}' has been deleted from #{self.name}'s list!"
+      puts "Note ##{delete_choice} has been deleted from #{self.name}'s list!"
     else
       puts "\n"
       puts "Invalid choice. Please select a valid note number."
