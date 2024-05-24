@@ -86,7 +86,7 @@ class List
     if note_to_replace.between?(1, @notes.length)
       puts "\n"
       puts "What would you like to enter instead?"
-      new_note = gets.chomp
+      new_note = gets.chomp.gsub(/\b\w/) {|word| word.capitalize }
       @notes.delete_at(note_to_replace - 1)
       @notes.push(new_note)
       puts "Note ##{note_to_replace} was replaced with #{new_note}!"
