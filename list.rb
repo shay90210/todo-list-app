@@ -90,6 +90,7 @@ class List
       new_note = gets.chomp.gsub(/\b\w/) {|word| word.capitalize }
       @notes.delete_at(note_to_replace - 1)
       @notes.push(new_note)
+      puts "\n"
       puts "Note ##{note_to_replace} was replaced with '#{new_note}!'"
       return list_menu
     else
@@ -110,6 +111,7 @@ class List
     delete_choice = gets.chomp.to_i
     if delete_choice.between?(1, @notes.length)
       @notes.delete_at(delete_choice - 1)
+      puts "\n"
       puts "Note ##{delete_choice} has been deleted from #{self.name}'s list!"
     else
       puts "\n"
