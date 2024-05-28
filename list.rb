@@ -93,7 +93,7 @@ class List
       return list_menu
     else
       puts "\n"
-      puts "Note is not found on the list."
+      puts "Invalid choice. Please select a valid note number."
       return modify_note
     end
   end
