@@ -66,6 +66,7 @@ class List
         puts "\n"
         return list_menu
       when 2
+        puts "\n"
         puts "Let's update your request."
       else 
         puts "\n"
