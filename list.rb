@@ -89,7 +89,7 @@ class List
       new_note = gets.chomp.gsub(/\b\w/) {|word| word.capitalize }
       @notes.delete_at(note_to_replace - 1)
       @notes.push(new_note)
-      puts "Note ##{note_to_replace} was replaced with #{new_note}!"
+      puts "Note ##{note_to_replace} was replaced with '#{new_note}!'"
       return list_menu
     else
       puts "\n"
