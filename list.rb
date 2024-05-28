@@ -120,7 +120,7 @@ class List
 
   def show_list
     puts "\n"
-    puts "Here is your list!"
+    puts "Here is #{self.name}'s list!"
   
     @notes.each_with_index do |note, index|
       puts "#{index + 1}. #{note}"
