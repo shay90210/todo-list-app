@@ -38,7 +38,7 @@ class List
         show_list
         break
       when 5
-        puts "We'll create a list next time! Goodbye!"
+        puts "We'll finish your list next time! Goodbye!"
         break
       else
         puts "\n"
@@ -54,7 +54,7 @@ class List
       puts "What would you like to add to your list?"
       user_note = gets.chomp.gsub(/\b\w/) {|word| word.capitalize }
       puts "\n"
-      puts "Do you want to add #{user_note} to #{self.name}'s list?"
+      puts "Do you want to add '#{user_note}' to #{self.name}'s list?"
       puts "Enter 1 = Yes"
       puts "Enter 2 = No"
 
